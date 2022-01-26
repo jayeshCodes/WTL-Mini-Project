@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- script.js link -->
+    <script src="script.js"></script>
+    <!-- <script src="show-on-scroll.js"></script> -->
+
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +18,7 @@
 
     <!-- style.css link -->
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="scroll.css"> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,7 +26,8 @@
      <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-    <title>WTL Mini Project</title>
+    <title>PropRows | BUY | SELL | RENT | PROPERTY SERVICES</title>
+    <link rel="icon" type="image/x-icon" href="home-solid.svg">
 </head>
 <body>
 
@@ -32,7 +38,7 @@
             <!-- Nav Bar -->
             
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html">PropRows</a>
+                <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i>PropRows</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,84 +58,182 @@
                         <a class="nav-link" href="services.html">Property Services<span class="sr-only">(current)</span></a>
                       </li>
                   </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Look for your city" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                  </form>
                 </div>
             </nav>
+
+            <!-- Search box -->
+        
+            
             <hr>
 
                 <!-- Title -->
 
                 <h4>We have properties for everyone </h4>
+                <hr class="hr1">
                 <br>
                 <br>
 
                 <div class="row">
                     <div class="col-lg-3 col-md-4 zoom">
-                        <a href="buy-page.html"><img class="car-img img-fluid" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Responsive image">
+                        <a href="buy-page.html"><img class="show-on-scroll inline-photo car-img img-fluid" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Responsive image">
                             <div class="bottomleft">Buy <i class="fas fa-arrow-right"></i></div></a>
                     </div>
                     <div class="col-lg-3 col-md-4 zoom">
                         <a href="rent-page.html">
-                            <img class="car-img img-fluid" src="https://www.mashvisor.com/blog/wp-content/uploads/2018/04/bigstock-Row-Of-New-Suburban-Homes-55511546.jpg" alt="Responsive image">
+                            <img class="show-on-scroll inline-photo car-img img-fluid" src="https://www.mashvisor.com/blog/wp-content/uploads/2018/04/bigstock-Row-Of-New-Suburban-Homes-55511546.jpg" alt="Responsive image">
                         <div class="bottomleft">Rent <i class="fas fa-arrow-right"></i></div>
                         </a>
                         </div>
                     <div class="col-lg-3 col-md-4 zoom">
                         <a href="sell-page.html">
-                            <img class="car-img img-fluid" src="https://media.istockphoto.com/photos/asian-family-buy-new-house-picture-id943940212?k=20&m=943940212&s=612x612&w=0&h=FCn12uyYut_a-ceZdZe7hf16Gxff4Td5K0ArSOU2s6g=" alt="Responsive image">
+                            <img class="show-on-scroll inline-photo car-img img-fluid" src="https://media.istockphoto.com/photos/asian-family-buy-new-house-picture-id943940212?k=20&m=943940212&s=612x612&w=0&h=FCn12uyYut_a-ceZdZe7hf16Gxff4Td5K0ArSOU2s6g=" alt="Responsive image">
                         <div class="bottomleft">Sell <i class="fas fa-arrow-right"></i></div>
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4 zoom">
                         <a href="services.html">
-                            <img class="car-img img-fluid" src="https://media.istockphoto.com/photos/home-tax-deduction-picture-id1270111816?b=1&k=20&m=1270111816&s=170667a&w=0&h=r15RKKh8GsUCFjX2FvrVmx4CYrk5fiAwSlfAmcwPoUw=" alt="Responsive image">
+                            <img class="show-on-scroll inline-photo car-img img-fluid" src="https://media.istockphoto.com/photos/home-tax-deduction-picture-id1270111816?b=1&k=20&m=1270111816&s=170667a&w=0&h=r15RKKh8GsUCFjX2FvrVmx4CYrk5fiAwSlfAmcwPoUw=" alt="Responsive image">
                         <div class="bottomleft">Property Services <i class="fas fa-arrow-right"></i></div>
                         </a>
                     </div>
 
                 </div>
                 <hr>
-                
-
-
-                
-                
-
-            </section>
+                </section>
 
 
                 <!-- featured projects -->
             <section id="featured-projects">
-                <h3>Featured Projects</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/220px-Townhouses_in_Victoria_Australia.jpg" alt="">
+                <h4 id="feature-head">Featured Projects</h4>
+                <p style="color: #FF1700;">Check out the most popular and featured projects!</p>
+                <br>
+                <hr class="hr1">
+
+                    <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <a href="https://amanora.com/" style="color: black;">
+                            <div class="card bg-dark text-black">
+                                <img class="card-img" src="https://is1-3.housingcdn.com/4f2250e8/6130de00235ce4337ca0369b9998c960/v2/fs.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Amanora Park Town</h5>
+                                  <p class="card-text">Hadapsar, Pune <i class="fas fa-arrow-right"></i></p>
+                                  <p class="card-text"></p>
+                                </div>
+                              </div>
+                        </a>
+                        
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="https://magarpattacity.com/" style="color: black;">
+                            <div class="card bg-light text-black">
+                                <img class="card-img" src="https://associated.space/files/udwz7w7pm27sdtbl0ggk/Magarpatta-City-1.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Magarpatta City </h5>
+                                  <p class="card-text">Hadapsar, Pune <i class="fas fa-arrow-right"></i></p>
+                                  <!-- <p class="card-text" style="color: black;"><i class="fas fa-arrow-right"></i></p> -->
+                                </div>
+                              </div>
+                        </a>
+                        
+                    </div>
+                </div>
                 <!-- <img src="https://www.mashvisor.com/blog/wp-content/uploads/2018/04/bigstock-Row-Of-New-Suburban-Homes-55511546.jpg" alt=""> -->
             </section>
 
                 <!-- top projects -->
-                <section id="top-projects">
-                    <h3>Top Projects</h3>
-                    <img src="" alt="">
-                    <img src="" alt="">    
+                <section class="colored-section" id="top-projects">
+                    <h4>Top Projects</h4>
+                    <hr>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <a href="https://amanora.com/" style="color: black;">
+                                <div class="card bg-dark text-black">
+                                    <img class="card-img" src="https://is1-3.housingcdn.com/4f2250e8/6130de00235ce4337ca0369b9998c960/v2/fs.jpg" alt="Card image">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Amanora Park Town</h5>
+                                      <p class="card-text">Hadapsar, Pune <i class="fas fa-arrow-right"></i></p>
+                                      <p class="card-text"></p>
+                                    </div>
+                                  </div>
+                            </a>
+                            
+    
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <a href="https://magarpattacity.com/" style="color: black;">
+                                <div class="card bg-light text-black">
+                                    <img class="card-img" src="https://associated.space/files/udwz7w7pm27sdtbl0ggk/Magarpatta-City-1.jpg" alt="Card image">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Magarpatta City </h5>
+                                      <p class="card-text">Hadapsar, Pune <i class="fas fa-arrow-right"></i></p>
+                                      <!-- <p class="card-text" style="color: black;"><i class="fas fa-arrow-right"></i></p> -->
+                                    </div>
+                                  </div>
+                            </a>
+                            
+                        </div>
+                    </div>
                 </section>
 
 
                 <!-- New Project Gallery -->
                 <section id="new-project-gallery">
-                    <h3>New Project Gallery</h3>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <h4 id="feature-head">New Project Gallery</h4>
+                    <p style="color: #FF1700;">New and Upcoming Projects</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <a href="https://amanora.com/" style="color: black;">
+                                <div class="card bg-dark text-black">
+                                    <img class="card-img" src="https://is1-3.housingcdn.com/4f2250e8/6130de00235ce4337ca0369b9998c960/v2/fs.jpg" alt="Card image">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Amanora Park Town</h5>
+                                      <p class="card-text">Hadapsar, Pune <i class="fas fa-arrow-right"></i></p>
+                                      <p class="card-text"></p>
+                                    </div>
+                                  </div>
+                            </a>
+                            
+    
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <a href="https://magarpattacity.com/" style="color: black;">
+                                <div class="card bg-light text-black">
+                                    <img class="card-img" src="https://associated.space/files/udwz7w7pm27sdtbl0ggk/Magarpatta-City-1.jpg" alt="Card image">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Magarpatta City </h5>
+                                      <p class="card-text">Hadapsar, Pune <i class="fas fa-arrow-right"></i></p>
+                                      <!-- <p class="card-text" style="color: black;"><i class="fas fa-arrow-right"></i></p> -->
+                                    </div>
+                                  </div>
+                            </a>
+                            
+                        </div>
+                    </div>
                 </section>
                 
 
 
                 <!-- Footer -->
 
-  <footer class="white-section" id="footer">
+  <footer class="colored-section" id="footer">
     <div class="container-fluid">
-      <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
-      <a href=""><i class="social-icon fab fa-twitter"></i></a>
-      <a href=""><i class="social-icon fab fa-instagram"></i></a>
-      <a href=""><i class="social-icon fas fa-envelope"></i></a>
-      <p>© PropRows</p>
+
+        <h6>About PropRows</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <a href="#" class="foot-icon"><i class="social-icon fab fa-facebook-f"></i></a>
+      <a href="#" class="foot-icon"><i class="social-icon fab fa-twitter"></i></a>
+      <a href="#" class="foot-icon"><i class="social-icon fab fa-instagram"></i></a>
+      <a href="#" class="foot-icon"><i class="social-icon fas fa-envelope"></i></a>
+      <p style="size: 50%;">© PropRows</p>
     </div>
   </footer>
 

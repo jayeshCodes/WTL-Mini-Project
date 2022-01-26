@@ -1,8 +1,16 @@
+*{
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
 .colored-section{
     background-color: #FF1700;
 }
 
-.navbar{
+.navbar, p{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,7 +27,7 @@ h4{
     
 }
 
-#title{
+#title, #top-projects, #new-project-gallery, #footer{
     padding: 3% 15% 7%;
 }
 
@@ -36,4 +44,57 @@ h4{
 
 .zoom:hover{
     transform: scale(1.1);
+}
+
+.form-control{
+    size: 1rem;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.hr1{
+    margin: 0;
+    width: 5%;
+    color: #fff;
+}
+
+#feature-head{
+    color: #FF1700;
+    margin: 0% 0% 5%;
+    padding: 0%;
+}
+
+#featured-projects{
+    padding: 3% 15% 7%;
+}
+
+.card{
+    transition: transform .5s;
+    margin: 0 auto;
+}
+
+.card:hover{
+    transform: scale(1.05);    
+}
+
+.card-img{
+    image-resolution: '894*270';
+}
+
+/* a:link{
+    color: black;
+} */
+
+#footer{
+    color: white;
+    margin: 0 0 0;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+.foot-icon{
+    margin: 1%;
+    size: 1rem;
 }
